@@ -106,7 +106,7 @@ window.SITE_CONTENT = {
         "subtitle": "Baltimore medical device startup · Health Innovation and Evaluation",
         "paragraphs": [
           "BlueHealer’s implant aims to save the limbs of patients with chronic limb-threatening ischemia who would otherwise face amputation (about 150,000 non-traumatic lower-limb amputations a year in the US).",
-          "My Monte Carlo model (Medicare basis, 20,000 draws) found the implant roughly cost-neutral against amputation, with +0.83 QALYs and +,708 net monetary benefit per patient. I also wrote the competitor analysis and the 6-month to 5-year earnings projections for the pitch."
+          "My Monte Carlo model (Medicare basis, 20,000 draws) found the implant roughly cost-neutral against amputation, with +0.83 QALYs and +$83,708 net monetary benefit per patient (at $100,000 per QALY). I also wrote the competitor analysis and the 6-month to 5-year earnings projections for the pitch."
         ],
         "chips": [
           "Monte Carlo",
