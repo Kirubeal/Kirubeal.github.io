@@ -43,7 +43,7 @@
   const PROJECT_RULES = [[/BlueHealer|HEOR|value/i, "scale"], [/Gilead|Market Access/i, "pill"], [/Midwest|acquisition|Semifinal/i, "briefcase"], [/Avinah|digital|Venture/i, "phone"], [/Pro Bono|WELI/i, "users"], [/GlowMatch|Product/i, "spark"]];
   const EXP_RULES = [[/Founder/i, "clinic"], [/Hospital|Emergency/i, "pulse"], [/Practitioner|Clinic/i, "steth"]];
   const CARD_RULES = [[/leader/i, "flag"], [/nutrition|thesis|child/i, "microscope"], [/quant|training|statist/i, "chart"]];
-  const SKILL_RULES = [[/tool/i, "chart"], [/method/i, "flask"], [/leader/i, "flag"]];
+  const SKILL_RULES = [[/\bAI\b/, "spark"], [/tool/i, "chart"], [/method/i, "flask"], [/leader/i, "flag"]];
   // A heartbeat that turns into a rising growth line: medicine into the business of health.
   const PULSE_TO_GROWTH = `<svg class="pulse-art" viewBox="0 0 1000 72" aria-hidden="true" focusable="false">
       <defs><linearGradient id="pulseFade" x1="0" x2="1"><stop offset="0" stop-color="#0a2a6b" stop-opacity="0"/><stop offset=".25" stop-color="#0a2a6b" stop-opacity=".55"/><stop offset="1" stop-color="#0a2a6b"/></linearGradient></defs>

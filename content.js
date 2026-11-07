@@ -384,7 +384,7 @@ window.SITE_CONTENT = {
       },
       {
         "value": "35–40%",
-        "label": "pre-tax margin during ~40% revenue growth"
+        "label": "annual pre-tax margin (2024–2025) during ~40% revenue growth"
       }
     ],
     "highlights": [
@@ -398,7 +398,7 @@ window.SITE_CONTENT = {
       },
       {
         "title": "Pricing and the P&L",
-        "text": "Set service prices and owned the P&L: revenue up about 40% over first-year levels at a 35–40% margin."
+        "text": "Set service prices and owned the P&L: revenue up about 40% over first-year levels, with an annual pre-tax margin of 35–40% in 2024 and 2025."
       },
       {
         "title": "Scaling to two sites",
@@ -600,7 +600,12 @@ window.SITE_CONTENT = {
           "SAS",
           "SPSS",
           "Tableau",
-          "PowerPoint",
+          "PowerPoint"
+        ]
+      },
+      {
+        "name": "AI tools",
+        "items": [
           "Claude Code",
           "Codex"
         ]
