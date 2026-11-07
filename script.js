@@ -174,8 +174,13 @@
     const wide = photos.length === 4;
     return `${sectionOpen("harme", "section section-dark")}
       <div class="container">
-        ${head("harme", "label", s.label, s.title)}
-        ${T("p", "harme.intro", s.intro, "lede case-lede", "Intro paragraph")}
+        <div class="case-head">
+          ${has(s.logo) || EDIT ? `<div class="case-logo">${img("harme.logo", s.logo, s.logoAlt)}</div>` : ""}
+          <div class="case-head-text">
+            ${head("harme", "label", s.label, s.title)}
+            ${T("p", "harme.intro", s.intro, "lede case-lede", "Intro paragraph")}
+          </div>
+        </div>
         ${items(s.stats).length || EDIT ? `<ul class="stats case-stats"${listAttr("harme.stats", "+ Add number")}>${items(s.stats).map(({ it, i }) => `<li${entry("harme.stats." + i, it)}>${T("strong", `harme.stats.${i}.value`, it.value, "", "Number")}${T("span", `harme.stats.${i}.label`, it.label, "", "What it means")}</li>`).join("")}</ul>` : ""}
         ${items(s.highlights).length || EDIT ? `<div class="case-grid"${listAttr("harme.highlights", "+ Add highlight")}>${items(s.highlights).map(({ it, i }, n) => `
           <div${entry("harme.highlights." + i, it, "case-item")}>

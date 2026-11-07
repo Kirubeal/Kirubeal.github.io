@@ -362,6 +362,8 @@ window.SITE_CONTENT = {
   "harme": {
     "show": true,
     "menuLabel": "Harme Clinic",
+    "logo": "images/harme-logo.webp",
+    "logoAlt": "Harme Clinic (Kilinika Harmee) logo",
     "label": "Case study",
     "title": "Building Harme Clinic",
     "intro": "A maternal and child health practice in Delo-Sebro, a remote area of Ethiopia. I founded it in 2023 as majority shareholder and ran it as executive and medical director until 2026.",

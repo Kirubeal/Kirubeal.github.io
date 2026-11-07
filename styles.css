@@ -458,3 +458,22 @@ body.editing section[data-section] { position: relative; }
   .hero .lede { font-size: 1.05rem; margin-top: 16px; }
   .hero-actions { margin-top: 24px; }
 }
+
+/* ---------- Harme Clinic logo, top-left of the section ---------- */
+.case-head { display: flex; align-items: flex-start; gap: 28px; }
+.case-head-text { flex: 1; min-width: 0; }
+.case-logo { flex: 0 0 132px; }
+.case-logo img { display: block; width: 132px; height: 132px; object-fit: contain; border-radius: 50%; background: #fff; box-shadow: 0 0 0 3px #d4a72c; }
+.case-head .case-lede { margin-top: 8px; }
+@media (max-width: 600px) {
+  .case-head { gap: 16px; }
+  .case-logo { flex-basis: 76px; }
+  .case-logo img { width: 76px; height: 76px; }
+}
+@media (max-width: 600px) {
+  .case-head { display: grid; grid-template-columns: 76px 1fr; column-gap: 16px; align-items: center; }
+  .case-head-text { display: contents; }
+  .case-logo { grid-row: 1 / span 2; }
+  .case-head .section-label, .case-head h2 { grid-column: 2; margin: 0; }
+  .case-head .case-lede { grid-column: 1 / -1; margin-top: 18px; }
+}
