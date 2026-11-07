@@ -3,14 +3,12 @@ window.SITE_CONTENT = {
     "name": "Kirubeal Aschalew Getahun",
     "credential": "MD",
     "eyebrow": "Physician · MPH/MBA Candidate, Johns Hopkins",
-    "intro": "Physician-entrepreneur with 4.5 years in clinical practice and healthcare management. I built and ran a two-site outpatient clinic in rural Ethiopia, owning the P&L and pricing and growing it to 41,000+ patient visits. Now a Johns Hopkins MPH/MBA candidate, I'm seeking roles in healthcare and life sciences consulting, market access, HEOR and healthcare management, and in global health.",
-    "seekingLabel": "Seeking Summer 2027 MBA and MPH internships with a healthcare focus in",
+    "intro": "Physician and clinic founder. I built and ran a two-site clinic in rural Ethiopia, owning pricing and the P&L through 41,000+ patient visits. Now a Johns Hopkins MPH/MBA candidate bringing that operating experience to healthcare strategy, market access and HEOR, from US health systems to global health.",
+    "seekingLabel": "Seeking Summer 2027 MBA and MPH internships in",
     "seeking": [
       "Healthcare & life sciences consulting",
       "Market access",
-      "HEOR",
-      "Healthcare management",
-      "Global health"
+      "HEOR"
     ],
     "photo": "images/headshot.jpg",
     "photoAlt": "Portrait of Kirubeal Getahun in a dark suit and red tie",
@@ -32,11 +30,11 @@ window.SITE_CONTENT = {
     },
     {
       "value": "Medicare",
-      "label": "cost model: limb-saving implant vs. amputation"
+      "label": "cost-effectiveness model I built: limb-saving implant vs. amputation"
     },
     {
       "value": "+$2.3M",
-      "label": "NPV in our case-competition acquisition recommendation"
+      "label": "modeled NPV in our case-competition acquisition recommendation"
     }
   ],
   "about": {
@@ -44,12 +42,9 @@ window.SITE_CONTENT = {
     "menuLabel": "About",
     "title": "Physician-entrepreneur on the business side of care",
     "paragraphs": [
-      "I'm a physician-entrepreneur with 4.5 years in clinical practice and healthcare management. I trained as a doctor at Jimma University in Ethiopia, graduating with distinction in 2021. For my MD thesis I led a community study of undernutrition in 358 children under five, designing the survey, managing field data collection and running the statistical analysis.",
-      "I started in general practice at two private outpatient clinics, Sine-Hiwot in Addis Ababa and Burkitu in rural Hasasa. Working in both showed me how independent practices actually run: staffing, supplies, pricing and patient flow, and why a model that works in the city often breaks down in a rural town.",
-      "At Ginnir General Hospital I took on emergency operations alongside clinical work. We raised the emergency department's compliance with national standards from 31% to 60% and cut wait times from 10–15 minutes to 6. I led infection-control and quality improvement across 13 departments, and coordinated a multi-partner cholera response that treated 2,200 patients in about two months at a 0.4% case fatality rate.",
-      "In 2023 I founded Harme Clinic, a maternal and child health practice in Delo-Sebro, as majority shareholder. Over three years I grew it from one site to two and from 6 to 17 staff, with 41,000+ patient visits. It became the referral point for three nearby health centers and brought in the area's first electronic health records. I set prices and owned the P&L: revenue grew about 40% over first-year levels while the pre-tax margin held at 35–40%.",
-      "I'm now completing a dual MPH (Bloomberg School of Public Health) and MBA (Carey Business School) at Johns Hopkins, where I hold a 3.82 GPA and an $80,000 merit scholarship. My work here includes a Monte Carlo cost-effectiveness model for a medical device startup, a 20,000-run launch simulation for the Gilead Pharma Case Competition, a semifinal run at the Midwest Healthcare Case Competition, and leading a pro bono market assessment for the Society for Pediatric Anesthesia. I'm also Medical Partner and Lead for Market Access and Strategy at Avinah Health, a digital health venture for African health systems.",
-      "Now focused on healthcare and life sciences consulting, market access, HEOR, healthcare management and global health."
+      "I trained as a doctor at Jimma University in Ethiopia and spent 4.5 years in clinical practice and healthcare management: in private clinics in Addis Ababa and rural Hasasa, then running emergency operations at Ginnir General Hospital. Along the way I saw how independent practices actually run (staffing, supplies, pricing and patient flow) and why a model that works in the city often breaks down in a rural town.",
+      "In 2023 I put that to work and founded Harme Clinic, which I ran for three years (case study below).",
+      "At Johns Hopkins I'm adding formal training in public health and business, and using it on a cost-effectiveness model for a medical device startup, plus a pharma launch plan and an acquisition valuation in case competitions. My focus is healthcare strategy, market access and HEOR, from US health systems to global health."
     ],
     "note": "Languages: English, Amharic (native), Afan Oromo."
   },
@@ -106,7 +101,7 @@ window.SITE_CONTENT = {
         "subtitle": "Baltimore medical device startup · Health Innovation and Evaluation",
         "paragraphs": [
           "BlueHealer’s implant aims to save the limbs of patients with chronic limb-threatening ischemia who would otherwise face amputation (about 150,000 non-traumatic lower-limb amputations a year in the US).",
-          "My Monte Carlo model (Medicare basis, 20,000 draws) found the implant roughly cost-neutral against amputation, with +0.83 QALYs and +$83,708 net monetary benefit per patient (at $100,000 per QALY). I also wrote the competitor analysis and the 6-month to 5-year earnings projections for the pitch."
+          "The implant came out roughly cost-neutral against amputation, with a large quality-of-life gain: +0.83 QALYs and +$83,708 net monetary benefit per patient (at $100,000 per QALY). These are modeled estimates from my Monte Carlo model on a Medicare basis (20,000 draws). I also wrote the competitor analysis and the 6-month to 5-year earnings projections for the pitch."
         ],
         "chips": [
           "Monte Carlo",
@@ -242,7 +237,7 @@ window.SITE_CONTENT = {
         "subtitle": "Medical Affairs launch plan for an AML therapy · Team of four",
         "paragraphs": [
           "Ten months before the FDA decision, how should Medical Affairs win 14 of 20 priority health systems and 18 of 20 payers within a year of launch? We recommended a tiered, payer-weighted launch.",
-          "I built the Monte Carlo simulation (20,000 launches per plan), the hypothesis tree and the MECE issue structure. It showed the hospital goal was safe (98%) but payer coverage was the binding constraint (26%), which is why the plan weights payers."
+          "Why payers: the hospital goal was nearly safe (met in 98% of simulated launches), but the payer goal was met in only 26%, so payer coverage would decide the launch. I built that simulation (20,000 launches per plan) and the hypothesis tree that structured our analysis."
         ],
         "chips": [
           "Market access",
@@ -304,7 +299,7 @@ window.SITE_CONTENT = {
         "role": "",
         "subtitle": "Pharma acquisition and product-line case · Team of four",
         "paragraphs": [
-          "Should a biotech acquire a struggling antithrombotic drug for peripheral artery disease? We said yes, on conditions: $500K upfront plus a 5% royalty, worth about +$2.3M in NPV, with quarterly gates to stop spending if demand fell short.",
+          "Should a biotech acquire a struggling antithrombotic drug for peripheral artery disease? We said yes, on conditions: $500K upfront plus a 5% royalty, worth about +$2.3M in modeled NPV, with quarterly gates to stop spending if demand fell short.",
           "I built the prediction model and presented the commercial strategy, the 12-month roadmap and the risk plan."
         ],
         "chips": [
