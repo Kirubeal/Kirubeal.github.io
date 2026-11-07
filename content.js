@@ -56,6 +56,45 @@ window.SITE_CONTENT = {
     "items": [
       {
         "show": true,
+        "tag": "Venture · Ongoing",
+        "ongoing": true,
+        "compact": false,
+        "date": "Nov 2026 – Present",
+        "title": "Avinah Health",
+        "role": "Medical Partner & Lead, Market Access and Strategy",
+        "subtitle": "AI-supported, mobile-first health platform for African health systems",
+        "paragraphs": [
+          "Built for rural Ethiopian clinics, where patient records are on paper and lab results often arrive after the patient has left. Avinah is designed to run offline on ordinary phones; its patient app is in beta.",
+          "I’m the clinical lead and lead market access and strategy: which health systems to approach and how to prove value in a pilot. It’s a team effort; a Carey teammate leads the technology."
+        ],
+        "chips": [
+          "Digital health",
+          "Market access",
+          "Strategy",
+          "FHIR / DHIS2"
+        ],
+        "website": {
+          "url": "https://www.avinah.health",
+          "label": "avinah.health",
+          "screenshot": "images/avinah-site.jpg",
+          "alt": "Avinah Health homepage: Health care that starts at home"
+        },
+        "links": [
+          {
+            "label": "avinah.health →",
+            "url": "https://www.avinah.health"
+          }
+        ],
+        "samples": {
+          "title": "",
+          "note": "",
+          "linkLabel": "",
+          "keyNumbers": [],
+          "slides": []
+        }
+      },
+      {
+        "show": true,
         "tag": "Value Analysis · HEOR",
         "ongoing": false,
         "compact": false,
@@ -112,6 +151,85 @@ window.SITE_CONTENT = {
               "show": false
             }
           ]
+        }
+      },
+      {
+        "show": true,
+        "tag": "Pro Bono Consulting",
+        "ongoing": false,
+        "compact": false,
+        "date": "Sep – Dec 2026",
+        "title": "WELI market assessment and growth strategy",
+        "role": "",
+        "subtitle": "Society for Pediatric Anesthesia · Carey Pro Bono Consulting Hub",
+        "paragraphs": [
+          "WELI, the society's Women's Empowerment and Leadership Initiative, runs a mentorship program for pediatric anesthesiologists. I'm project manager for a five-person team building its growth strategy.",
+          "I lead the distribution-channel analysis: how WELI recruits members and delivers its program. I also designed and launched the non-member survey."
+        ],
+        "chips": [
+          "Project management",
+          "Survey design",
+          "Stakeholder interviews"
+        ],
+        "website": {
+          "url": "",
+          "label": "",
+          "screenshot": "",
+          "alt": ""
+        },
+        "links": [
+          {
+            "label": "View the survey I designed →",
+            "url": "https://forms.gle/zBKiXyzuKv63r4Mt6"
+          },
+          {
+            "label": "WELI website →",
+            "url": "https://weli.pedsanesthesia.org/"
+          }
+        ],
+        "samples": {
+          "title": "",
+          "note": "",
+          "linkLabel": "",
+          "keyNumbers": [],
+          "slides": []
+        }
+      },
+      {
+        "show": true,
+        "tag": "Product Launch",
+        "ongoing": false,
+        "compact": false,
+        "date": "Sep – Oct 2026",
+        "title": "GlowMatch",
+        "role": "",
+        "subtitle": "Carey Marketing Management team project",
+        "paragraphs": [
+          "GlowMatch matches people with beauty products based on their skin, hair, lifestyle and budget. Our team launched the beta site. I ran the competitor and SWOT analysis behind its positioning."
+        ],
+        "chips": [
+          "Competitive analysis",
+          "SWOT",
+          "Positioning"
+        ],
+        "website": {
+          "url": "https://glowwmatch.com",
+          "label": "glowwmatch.com",
+          "screenshot": "images/glowmatch-site.jpg",
+          "alt": "GlowMatch beta landing page: Beauty that learns you"
+        },
+        "links": [
+          {
+            "label": "glowwmatch.com →",
+            "url": "https://glowwmatch.com"
+          }
+        ],
+        "samples": {
+          "title": "",
+          "note": "",
+          "linkLabel": "",
+          "keyNumbers": [],
+          "slides": []
         }
       },
       {
@@ -239,124 +357,6 @@ window.SITE_CONTENT = {
               "alt": "Slide: key risks, what could happen and mitigation"
             }
           ]
-        }
-      },
-      {
-        "show": true,
-        "tag": "Venture · Ongoing",
-        "ongoing": true,
-        "compact": true,
-        "date": "Nov 2026 – Present",
-        "title": "Avinah Health",
-        "role": "Medical Partner & Lead, Market Access and Strategy",
-        "subtitle": "AI-supported, mobile-first health platform for African health systems",
-        "paragraphs": [
-          "Built for rural Ethiopian clinics, where patient records are on paper and lab results often arrive after the patient has left. Avinah is designed to run offline on ordinary phones; its patient app is in beta.",
-          "I’m the clinical lead and lead market access and strategy: which health systems to approach and how to prove value in a pilot. It’s a team effort; a Carey teammate leads the technology."
-        ],
-        "chips": [
-          "Digital health",
-          "Market access",
-          "Strategy",
-          "FHIR / DHIS2"
-        ],
-        "website": {
-          "url": "https://www.avinah.health",
-          "label": "avinah.health",
-          "screenshot": "images/avinah-site.jpg",
-          "alt": "Avinah Health homepage: Health care that starts at home"
-        },
-        "links": [
-          {
-            "label": "avinah.health →",
-            "url": "https://www.avinah.health"
-          }
-        ],
-        "samples": {
-          "title": "",
-          "note": "",
-          "linkLabel": "",
-          "keyNumbers": [],
-          "slides": []
-        }
-      },
-      {
-        "show": true,
-        "tag": "Pro Bono Consulting",
-        "ongoing": false,
-        "compact": true,
-        "date": "Sep – Dec 2026",
-        "title": "WELI market assessment and growth strategy",
-        "role": "",
-        "subtitle": "Society for Pediatric Anesthesia · Carey Pro Bono Consulting Hub",
-        "paragraphs": [
-          "WELI, the society's Women's Empowerment and Leadership Initiative, runs a mentorship program for pediatric anesthesiologists. I'm project manager for a five-person team building its growth strategy.",
-          "I lead the distribution-channel analysis: how WELI recruits members and delivers its program. I also designed and launched the non-member survey."
-        ],
-        "chips": [
-          "Project management",
-          "Survey design",
-          "Stakeholder interviews"
-        ],
-        "website": {
-          "url": "",
-          "label": "",
-          "screenshot": "",
-          "alt": ""
-        },
-        "links": [
-          {
-            "label": "View the survey I designed →",
-            "url": "https://forms.gle/zBKiXyzuKv63r4Mt6"
-          },
-          {
-            "label": "WELI website →",
-            "url": "https://weli.pedsanesthesia.org/"
-          }
-        ],
-        "samples": {
-          "title": "",
-          "note": "",
-          "linkLabel": "",
-          "keyNumbers": [],
-          "slides": []
-        }
-      },
-      {
-        "show": true,
-        "tag": "Product Launch",
-        "ongoing": false,
-        "compact": true,
-        "date": "Sep – Oct 2026",
-        "title": "GlowMatch",
-        "role": "",
-        "subtitle": "Carey Marketing Management team project",
-        "paragraphs": [
-          "GlowMatch matches people with beauty products based on their skin, hair, lifestyle and budget. Our team launched the beta site. I ran the competitor and SWOT analysis behind its positioning."
-        ],
-        "chips": [
-          "Competitive analysis",
-          "SWOT",
-          "Positioning"
-        ],
-        "website": {
-          "url": "https://glowwmatch.com",
-          "label": "glowwmatch.com",
-          "screenshot": "images/glowmatch-site.jpg",
-          "alt": "GlowMatch beta landing page: Beauty that learns you"
-        },
-        "links": [
-          {
-            "label": "glowwmatch.com →",
-            "url": "https://glowwmatch.com"
-          }
-        ],
-        "samples": {
-          "title": "",
-          "note": "",
-          "linkLabel": "",
-          "keyNumbers": [],
-          "slides": []
         }
       }
     ]

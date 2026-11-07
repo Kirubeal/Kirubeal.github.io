@@ -209,7 +209,7 @@
     return `${sectionOpen("projects", "section section-alt")}
       <div class="container">
         ${head("projects", "menuLabel", s.menuLabel, s.title)}
-        <div class="cards cards-featured"${listAttr("projects.items", "+ Add project")}>${list.filter(({ it }) => !it.compact).map(({ it, i }) => renderProjectCard(it, i)).join("")}</div>
+        <div class="cards${list.some(({ it }) => it.compact) ? " cards-featured" : ""}"${listAttr("projects.items", "+ Add project")}>${list.filter(({ it }) => !it.compact).map(({ it, i }) => renderProjectCard(it, i)).join("")}</div>
         ${list.some(({ it }) => it.compact) ? `
         <div class="more-projects">
           ${T("h3", "projects.moreTitle", s.moreTitle, "more-title", "Heading above the smaller cards")}
