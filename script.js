@@ -57,6 +57,7 @@
     const p = c.profile || {};
     const links = SECTIONS.filter((k) => c[k] && c[k].show !== false).map((k) => `<a href="#${k}" data-section-link="${k}">${esc(c[k].menuLabel || k)}</a>`).join("");
     return `
+      <div class="side-handle" aria-hidden="true"><span></span><span></span><span></span><em>Menu</em></div>
       <a href="#top" class="side-id">
         ${has(p.photo) ? `<img src="${esc(p.photo)}" alt="" class="side-photo" />` : ""}
         <span class="side-name">${esc(p.name)}${has(p.credential) ? `, ${esc(p.credential)}` : ""}</span>
@@ -321,6 +322,9 @@
   document.addEventListener("click", (e) => {
     if (e.target.closest(".menu-btn")) { document.body.classList.toggle("menu-open"); return; }
     if (e.target.closest(".side-nav a") || e.target.closest(".menu-scrim")) document.body.classList.remove("menu-open");
+    // Let the hover menu close once the mouse leaves (a focused link would keep it open)
+    const sideLink = e.target.closest(".sidebar a");
+    if (sideLink && !sideLink.hasAttribute("download")) setTimeout(() => sideLink.blur(), 0);
     if (EDIT) return; // in edit mode, clicks edit instead of opening images
     const btn = e.target.closest(".sample-open");
     const lightbox = document.querySelector(".lightbox");
