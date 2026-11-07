@@ -312,6 +312,25 @@ h4 { font-family: var(--sans); font-size: .8rem; text-transform: uppercase; lett
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 
+/* ---------- Featured projects and smaller "More projects" cards ---------- */
+.cards-featured > .card:nth-child(odd):last-child { grid-column: 1 / -1; }
+@media (min-width: 1200px) {
+  .cards-featured { grid-template-columns: repeat(3, 1fr); }
+  .cards-featured > .card:nth-child(odd):last-child { grid-column: auto; }
+}
+.more-projects { margin-top: 48px; }
+.more-title {
+  font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 16px; font-family: inherit;
+}
+.cards-compact { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card-compact { padding: 20px; gap: 6px; box-shadow: none; }
+.card-compact h3 { font-size: 1.1rem; }
+.card-compact p { font-size: .9rem; }
+.card-compact .card-client { font-size: .82rem; }
+.card-compact .card-links { margin-top: auto; padding-top: 4px; }
+.card-compact .card-link { font-size: .88rem; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .stats { grid-template-columns: repeat(2, 1fr); }

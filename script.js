@@ -119,7 +119,7 @@
     const links = linkItems.map(({ it, i: j }) => `<a class="card-link" href="${esc(it.url || "#")}"${ext(it.url)}${entry(`${P}.links.${j}`, it)}><span${EDIT ? ` data-edit="${P}.links.${j}.label" data-ph="Link text"` : ""}>${esc(it.label)}</span></a>`).join("");
     const sampleLink = hasSamples(pr) ? `<a class="card-link" href="#samples-${i}">${esc((pr.samples && pr.samples.linkLabel) || "See the work samples ↓")}</a>` : "";
     return `
-      <article${entry(P, pr, "card" + (pr.ongoing ? " card-venture" : ""))}>
+      <article${entry(P, pr, "card" + (pr.ongoing ? " card-venture" : "") + (pr.compact ? " card-compact" : ""))}>
         <div class="card-top">
           ${has(pr.tag) || EDIT ? `<span class="tag${pr.ongoing ? " tag-live" : ""}">${pr.ongoing ? '<span class="dot"></span>' : ""}<span${EDIT ? ` data-edit="${P}.tag" data-ph="Tag"` : ""}>${esc(pr.tag)}</span></span>` : "<span></span>"}
           ${T("span", P + ".date", pr.date, "card-date", "Dates")}
@@ -128,12 +128,12 @@
         ${T("p", P + ".role", pr.role, "tl-role card-role", "Your role (optional)")}
         ${T("p", P + ".subtitle", pr.subtitle, "card-client", "Client · course (optional)")}
         ${strList("div", "p", P + ".paragraphs", pr.paragraphs, "paras", "+ Add paragraph")}
-        ${has(w.screenshot) ? `
+        ${has(w.screenshot) && !pr.compact ? `
         <a class="site-preview" href="${esc(w.url || "#")}"${ext(w.url)}>
           <span class="browser-bar"><i></i><i></i><i></i><span class="browser-url">${esc(w.label || w.url)}</span></span>
           ${img(P + ".website.screenshot", w.screenshot, w.alt, 'loading="lazy" ')}
         </a>` : ""}
-        ${strList("ul", "li", P + ".chips", pr.chips, "chips", "+ Add tag")}
+        ${pr.compact && !EDIT ? "" : strList("ul", "li", P + ".chips", pr.chips, "chips", "+ Add tag")}
         <div class="card-links"${listAttr(P + ".links", "+ Add link")}>${links}${sampleLink}</div>
       </article>`;
   }
@@ -162,7 +162,12 @@
     return `${sectionOpen("projects", "section section-alt")}
       <div class="container">
         ${head("projects", "menuLabel", s.menuLabel, s.title)}
-        <div class="cards"${listAttr("projects.items", "+ Add project")}>${list.map(({ it, i }) => renderProjectCard(it, i)).join("")}</div>
+        <div class="cards cards-featured"${listAttr("projects.items", "+ Add project")}>${list.filter(({ it }) => !it.compact).map(({ it, i }) => renderProjectCard(it, i)).join("")}</div>
+        ${list.some(({ it }) => it.compact) ? `
+        <div class="more-projects">
+          ${T("h3", "projects.moreTitle", s.moreTitle, "more-title", "Heading above the smaller cards")}
+          <div class="cards cards-compact">${list.filter(({ it }) => it.compact).map(({ it, i }) => renderProjectCard(it, i)).join("")}</div>
+        </div>` : ""}
         ${list.filter(({ it }) => hasSamples(it)).map(({ it, i }) => renderSamples(it, i)).join("")}
         ${EDIT ? list.filter(({ it }) => !hasSamples(it)).map(({ it, i }) => `<div class="ed-samples-empty"${listAttr(`projects.items.${i}.samples.slides`, "+ Add work samples (slides or images) for " + (it.title || "this project"))}></div>`).join("") : ""}
       </div>

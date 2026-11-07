@@ -52,56 +52,20 @@ window.SITE_CONTENT = {
     "show": true,
     "menuLabel": "Projects",
     "title": "Value analysis, strategy and consulting",
+    "moreTitle": "More projects",
     "items": [
-      {
-        "show": true,
-        "tag": "Venture · Ongoing",
-        "ongoing": true,
-        "date": "Nov 2026 – Present",
-        "title": "Avinah Health",
-        "role": "Medical Partner & Lead, Market Access and Strategy",
-        "subtitle": "AI-supported, mobile-first health platform for African health systems",
-        "paragraphs": [
-          "Built for rural Ethiopian clinics, where patient records are on paper and lab results often arrive after the patient has left. Avinah is designed to run offline on ordinary phones; its patient app is in beta.",
-          "I’m the clinical lead and lead market access and strategy: which health systems to approach and how to prove value in a pilot. It’s a team effort; a Carey teammate leads the technology."
-        ],
-        "chips": [
-          "Digital health",
-          "Market access",
-          "Strategy",
-          "FHIR / DHIS2"
-        ],
-        "website": {
-          "url": "https://www.avinah.health",
-          "label": "avinah.health",
-          "screenshot": "images/avinah-site.jpg",
-          "alt": "Avinah Health homepage: Health care that starts at home"
-        },
-        "links": [
-          {
-            "label": "avinah.health →",
-            "url": "https://www.avinah.health"
-          }
-        ],
-        "samples": {
-          "title": "",
-          "note": "",
-          "linkLabel": "",
-          "keyNumbers": [],
-          "slides": []
-        }
-      },
       {
         "show": true,
         "tag": "Value Analysis · HEOR",
         "ongoing": false,
+        "compact": false,
         "date": "Sep – Oct 2026",
         "title": "BlueHealer value analysis dossier",
         "role": "",
         "subtitle": "Baltimore medical device startup · Health Innovation and Evaluation",
         "paragraphs": [
           "BlueHealer’s implant aims to save the limbs of patients with chronic limb-threatening ischemia who would otherwise face amputation (about 150,000 non-traumatic lower-limb amputations a year in the US).",
-          "The implant came out roughly cost-neutral against amputation, with a large quality-of-life gain: +0.83 QALYs and +$83,708 net monetary benefit per patient (at $100,000 per QALY). These are modeled estimates from my Monte Carlo model on a Medicare basis (20,000 draws). I also wrote the competitor analysis and the 6-month to 5-year earnings projections for the pitch."
+          "The implant came out roughly cost-neutral against amputation, with a large quality-of-life gain: +0.83 QALYs and +$83,708 net monetary benefit per patient in my Monte Carlo model (modeled estimates, Medicare basis). I also wrote the competitor analysis and the 6-month to 5-year earnings projections for the pitch."
         ],
         "chips": [
           "Monte Carlo",
@@ -118,7 +82,7 @@ window.SITE_CONTENT = {
         "links": [],
         "samples": {
           "title": "Work samples: BlueHealer value analysis",
-          "note": "Results from my Monte Carlo model, and the competitor comparison from our team's pitch deck.",
+          "note": "Modeled estimates, not observed outcomes. Basis: Medicare FY2026 IPPS payments, a three-year horizon, six treatment pathways and a $100,000-per-QALY threshold. Almost all of the benefit comes from the QALY gain, which is why net monetary benefit stays positive in every draw even though the implant is cheaper in only 69% of draws.",
           "linkLabel": "See the model findings ↓",
           "keyNumbers": [
             {
@@ -152,85 +116,9 @@ window.SITE_CONTENT = {
       },
       {
         "show": true,
-        "tag": "Pro Bono Consulting",
-        "ongoing": false,
-        "date": "Sep – Dec 2026",
-        "title": "WELI market assessment and growth strategy",
-        "role": "",
-        "subtitle": "Society for Pediatric Anesthesia · Carey Pro Bono Consulting Hub",
-        "paragraphs": [
-          "WELI, the society's Women's Empowerment and Leadership Initiative, runs a mentorship program for pediatric anesthesiologists. I'm project manager for a five-person team building its growth strategy.",
-          "I lead the distribution-channel analysis: how WELI recruits members and delivers its program. I also designed and launched the non-member survey."
-        ],
-        "chips": [
-          "Project management",
-          "Survey design",
-          "Stakeholder interviews"
-        ],
-        "website": {
-          "url": "",
-          "label": "",
-          "screenshot": "",
-          "alt": ""
-        },
-        "links": [
-          {
-            "label": "View the survey I designed →",
-            "url": "https://forms.gle/zBKiXyzuKv63r4Mt6"
-          },
-          {
-            "label": "WELI website →",
-            "url": "https://weli.pedsanesthesia.org/"
-          }
-        ],
-        "samples": {
-          "title": "",
-          "note": "",
-          "linkLabel": "",
-          "keyNumbers": [],
-          "slides": []
-        }
-      },
-      {
-        "show": true,
-        "tag": "Product Launch",
-        "ongoing": false,
-        "date": "Sep – Oct 2026",
-        "title": "GlowMatch",
-        "role": "",
-        "subtitle": "Carey Marketing Management team project",
-        "paragraphs": [
-          "GlowMatch matches people with beauty products based on their skin, hair, lifestyle and budget. Our team launched the beta site. I ran the competitor and SWOT analysis behind its positioning."
-        ],
-        "chips": [
-          "Competitive analysis",
-          "SWOT",
-          "Positioning"
-        ],
-        "website": {
-          "url": "https://glowwmatch.com",
-          "label": "glowwmatch.com",
-          "screenshot": "images/glowmatch-site.jpg",
-          "alt": "GlowMatch beta landing page: Beauty that learns you"
-        },
-        "links": [
-          {
-            "label": "glowwmatch.com →",
-            "url": "https://glowwmatch.com"
-          }
-        ],
-        "samples": {
-          "title": "",
-          "note": "",
-          "linkLabel": "",
-          "keyNumbers": [],
-          "slides": []
-        }
-      },
-      {
-        "show": true,
         "tag": "Case Competition · Market Access",
         "ongoing": false,
+        "compact": false,
         "date": "Nov 2026",
         "title": "Gilead Pharma Case Competition",
         "role": "",
@@ -294,6 +182,7 @@ window.SITE_CONTENT = {
         "show": true,
         "tag": "Case Competition · Semifinalist",
         "ongoing": false,
+        "compact": false,
         "date": "Oct 2026",
         "title": "Midwest Healthcare Case Competition",
         "role": "",
@@ -350,6 +239,124 @@ window.SITE_CONTENT = {
               "alt": "Slide: key risks, what could happen and mitigation"
             }
           ]
+        }
+      },
+      {
+        "show": true,
+        "tag": "Venture · Ongoing",
+        "ongoing": true,
+        "compact": true,
+        "date": "Nov 2026 – Present",
+        "title": "Avinah Health",
+        "role": "Medical Partner & Lead, Market Access and Strategy",
+        "subtitle": "AI-supported, mobile-first health platform for African health systems",
+        "paragraphs": [
+          "Built for rural Ethiopian clinics, where patient records are on paper and lab results often arrive after the patient has left. Avinah is designed to run offline on ordinary phones; its patient app is in beta.",
+          "I’m the clinical lead and lead market access and strategy: which health systems to approach and how to prove value in a pilot. It’s a team effort; a Carey teammate leads the technology."
+        ],
+        "chips": [
+          "Digital health",
+          "Market access",
+          "Strategy",
+          "FHIR / DHIS2"
+        ],
+        "website": {
+          "url": "https://www.avinah.health",
+          "label": "avinah.health",
+          "screenshot": "images/avinah-site.jpg",
+          "alt": "Avinah Health homepage: Health care that starts at home"
+        },
+        "links": [
+          {
+            "label": "avinah.health →",
+            "url": "https://www.avinah.health"
+          }
+        ],
+        "samples": {
+          "title": "",
+          "note": "",
+          "linkLabel": "",
+          "keyNumbers": [],
+          "slides": []
+        }
+      },
+      {
+        "show": true,
+        "tag": "Pro Bono Consulting",
+        "ongoing": false,
+        "compact": true,
+        "date": "Sep – Dec 2026",
+        "title": "WELI market assessment and growth strategy",
+        "role": "",
+        "subtitle": "Society for Pediatric Anesthesia · Carey Pro Bono Consulting Hub",
+        "paragraphs": [
+          "WELI, the society's Women's Empowerment and Leadership Initiative, runs a mentorship program for pediatric anesthesiologists. I'm project manager for a five-person team building its growth strategy.",
+          "I lead the distribution-channel analysis: how WELI recruits members and delivers its program. I also designed and launched the non-member survey."
+        ],
+        "chips": [
+          "Project management",
+          "Survey design",
+          "Stakeholder interviews"
+        ],
+        "website": {
+          "url": "",
+          "label": "",
+          "screenshot": "",
+          "alt": ""
+        },
+        "links": [
+          {
+            "label": "View the survey I designed →",
+            "url": "https://forms.gle/zBKiXyzuKv63r4Mt6"
+          },
+          {
+            "label": "WELI website →",
+            "url": "https://weli.pedsanesthesia.org/"
+          }
+        ],
+        "samples": {
+          "title": "",
+          "note": "",
+          "linkLabel": "",
+          "keyNumbers": [],
+          "slides": []
+        }
+      },
+      {
+        "show": true,
+        "tag": "Product Launch",
+        "ongoing": false,
+        "compact": true,
+        "date": "Sep – Oct 2026",
+        "title": "GlowMatch",
+        "role": "",
+        "subtitle": "Carey Marketing Management team project",
+        "paragraphs": [
+          "GlowMatch matches people with beauty products based on their skin, hair, lifestyle and budget. Our team launched the beta site. I ran the competitor and SWOT analysis behind its positioning."
+        ],
+        "chips": [
+          "Competitive analysis",
+          "SWOT",
+          "Positioning"
+        ],
+        "website": {
+          "url": "https://glowwmatch.com",
+          "label": "glowwmatch.com",
+          "screenshot": "images/glowmatch-site.jpg",
+          "alt": "GlowMatch beta landing page: Beauty that learns you"
+        },
+        "links": [
+          {
+            "label": "glowwmatch.com →",
+            "url": "https://glowwmatch.com"
+          }
+        ],
+        "samples": {
+          "title": "",
+          "note": "",
+          "linkLabel": "",
+          "keyNumbers": [],
+          "slides": []
         }
       }
     ]
@@ -526,14 +533,12 @@ window.SITE_CONTENT = {
       },
       {
         "show": true,
-        "title": "Quantitative methods in practice",
-        "role": "Coursework and applied projects",
+        "title": "Quantitative training",
+        "role": "Johns Hopkins coursework",
         "meta": "",
         "bullets": [
-          "Cost-effectiveness: Monte Carlo model of a medical device vs. amputation on a US Medicare basis, with QALYs and net monetary benefit (BlueHealer).",
-          "Launch simulation: 20,000-run Monte Carlo, hypothesis tree and MECE issue structure for a payer-weighted drug launch (Gilead case).",
-          "Valuation: NPV, scenario and sensitivity analysis for a pharma acquisition (Midwest case).",
-          "Epidemiology and biostatistics in R and Stata. Epi-Biostat concentration and Global Health Economics Certificate in progress."
+          "Epidemiology and biostatistics in R and Stata.",
+          "Epi-Biostat concentration and Global Health Economics Certificate in progress."
         ]
       }
     ]
@@ -597,14 +602,14 @@ window.SITE_CONTENT = {
       {
         "name": "Methods",
         "items": [
-          "Monte Carlo modeling",
-          "Cost-effectiveness (QALYs, NMB)",
-          "NPV & scenario analysis",
-          "Logistic regression",
+          "Monte Carlo modeling (BlueHealer, Gilead)",
+          "Cost-effectiveness, QALYs and NMB (BlueHealer)",
+          "NPV & scenario analysis (Midwest)",
+          "Logistic regression (MD thesis)",
           "Market sizing",
-          "Survey design",
-          "Stakeholder interviews",
-          "Competitive analysis"
+          "Survey design (MD thesis, WELI)",
+          "Stakeholder interviews (WELI)",
+          "Competitive analysis (BlueHealer, GlowMatch)"
         ]
       },
       {
@@ -622,6 +627,6 @@ window.SITE_CONTENT = {
     "show": true,
     "menuLabel": "Contact",
     "title": "Let's talk",
-    "text": "I'm looking for Summer 2027 MBA and MPH internships with a healthcare focus: healthcare and life sciences consulting, market access, HEOR, healthcare management or global health."
+    "text": "I'm looking for Summer 2027 MBA and MPH internships in healthcare and life sciences consulting, market access and HEOR, from US health systems to global health."
   }
 };
