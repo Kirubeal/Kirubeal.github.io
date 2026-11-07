@@ -523,3 +523,108 @@ body.editing section[data-section] { position: relative; }
 @media (min-width: 1025px) and (prefers-reduced-motion: reduce) {
   .sidebar, .sidebar > * { transition: none; }
 }
+
+/* ---------- Visuals: medicine + the business of health ---------- */
+:root { --gold: #d4a72c; }
+.ico svg, .sec-ico svg, .stat-ico svg, .card-ico svg, .case-ico svg, .tl-ico svg, .edu-ico svg, .skill-ico svg, .hero-chip svg { display: block; width: 100%; height: 100%; }
+
+/* Section labels with an icon, and a gold rule under each heading */
+.label-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.label-row .section-label { margin-bottom: 0; }
+.sec-ico { flex: none; width: 34px; height: 34px; padding: 7px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); box-shadow: inset 0 0 0 1px rgba(212,167,44,.6); }
+.section-dark .sec-ico, .contact .sec-ico { background: rgba(212,167,44,.12); color: var(--gold); box-shadow: inset 0 0 0 1px rgba(212,167,44,.5); }
+.section h2::after { content: ""; display: block; width: 56px; height: 3px; margin-top: 14px; border-radius: 3px; background: linear-gradient(90deg, var(--gold), rgba(212,167,44,0)); }
+
+/* Hero: soft light, a faint medical-cross pattern, framed photo */
+.hero {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(800px 480px at 88% 8%, rgba(10,42,107,.08), transparent 62%),
+    radial-gradient(640px 420px at -5% 105%, rgba(212,167,44,.10), transparent 60%);
+}
+.hero::before {
+  content: ""; position: absolute; top: 0; right: 0; width: 60%; height: 80%; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cpath d='M22 18v8M18 22h8' stroke='%230a2a6b' stroke-opacity='.16' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(closest-side at 62% 45%, #000 25%, transparent);
+  mask-image: radial-gradient(closest-side at 62% 45%, #000 25%, transparent);
+}
+.hero > .container { position: relative; }
+.hero-photo { position: relative; isolation: isolate; }
+.hero-photo img { position: relative; }
+.hero-photo::before { content: ""; position: absolute; inset: 22px -22px -22px 22px; z-index: -1; border: 2px solid rgba(212,167,44,.85); border-radius: 22px; }
+.hero-photo::after {
+  content: ""; position: absolute; left: -38px; top: -30px; width: 130px; height: 130px; z-index: -1;
+  background-image: radial-gradient(rgba(10,42,107,.3) 1.6px, transparent 1.9px); background-size: 14px 14px;
+}
+.hero-chip { position: absolute; z-index: 1; width: 58px; height: 58px; padding: 14px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 14px 28px -12px rgba(8,26,66,.6); }
+.hc-med { left: -26px; bottom: 46px; background: #0a2a6b; color: var(--gold); }
+.hc-biz { right: -26px; top: 42px; background: var(--gold); color: #0a2a6b; }
+
+/* Heartbeat that turns into a growth chart */
+.hero-pulse { margin-top: 56px; }
+.pulse-art { display: block; width: 100%; height: auto; overflow: visible; }
+.pulse-art path { fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.pulse-art .pulse-growth { stroke: var(--gold); stroke-width: 3; }
+.pulse-bars rect { fill: rgba(212,167,44,.18); }
+.pulse-dots circle { fill: #fff; stroke: var(--gold); stroke-width: 2.4; }
+.hero-pulse + .stats { margin-top: 8px; padding-top: 12px; border-top: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .hero .pulse-ecg, .hero .pulse-growth { stroke-dasharray: 1; stroke-dashoffset: 1; animation: pulseDraw 1.6s ease-out .2s forwards; }
+  .hero .pulse-growth { animation-duration: 1.1s; animation-delay: 1.5s; }
+  .hero .pulse-dots circle, .hero .pulse-bars rect { opacity: 0; animation: pulseShow .5s ease-out 2.1s forwards; }
+}
+@keyframes pulseDraw { to { stroke-dashoffset: 0; } }
+@keyframes pulseShow { to { opacity: 1; } }
+
+/* Number tiles */
+.stat-ico { display: block; width: 32px; height: 32px; padding: 6px; margin-bottom: 10px; border-radius: 9px; background: var(--accent-soft); color: var(--accent); }
+.case-stats .stat-ico { background: rgba(212,167,44,.14); color: var(--gold); }
+
+/* Harme: a faint heartbeat along the top of the section */
+.section-dark { position: relative; overflow: hidden; }
+.section-dark::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 6px; height: 80px; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='80'%3E%3Cpath d='M0 50h220l10-14 8 14h12l10-40 12 64 10-26h18l8-8 8 8h284' fill='none' stroke='%23d4a72c' stroke-opacity='.28' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") repeat-x center / 600px 80px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 30%, #000 70%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 30%, #000 70%, transparent);
+}
+.section-dark > .container { position: relative; }
+.case-item-top { display: flex; align-items: center; justify-content: space-between; }
+.case-ico { width: 42px; height: 42px; padding: 9px; border-radius: 12px; background: rgba(212,167,44,.12); color: var(--gold); border: 1px solid rgba(212,167,44,.35); }
+.case-item { transition: border-color .2s, transform .2s; }
+.case-item:hover { border-color: rgba(212,167,44,.6); transform: translateY(-2px); }
+
+/* Project cards */
+.card { position: relative; overflow: hidden; }
+.cards-featured .card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--accent), var(--gold)); }
+.card-ico { width: 46px; height: 46px; padding: 11px; border-radius: 14px; background: var(--accent-soft); color: var(--accent); transition: background .2s, color .2s; }
+.card:hover .card-ico { background: var(--accent); color: var(--gold); }
+.card-compact .card-ico { width: 34px; height: 34px; padding: 8px; border-radius: 10px; }
+
+/* Experience, research and education */
+.tl-ico { width: 42px; height: 42px; padding: 10px; margin-bottom: 6px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); box-shadow: inset 0 0 0 1px rgba(212,167,44,.6); }
+.edu-logo { display: flex; align-items: center; height: 56px; margin-bottom: 18px; }
+.edu-logo img { display: block; height: 100%; width: auto; max-width: 100%; object-fit: contain; object-position: left center; }
+.edu-ico { display: block; width: 44px; height: 44px; padding: 10px; margin-bottom: 16px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); }
+
+/* Skills */
+.skill-head { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.skill-head h3 { margin-bottom: 0; }
+.skill-ico { flex: none; width: 34px; height: 34px; padding: 7px; border-radius: 10px; background: #fff; color: var(--accent); border: 1px solid var(--line); }
+
+/* Contact: the same heartbeat-to-growth line, faint in the background */
+.contact { position: relative; overflow: hidden; }
+.contact .container > :not(.contact-art) { position: relative; z-index: 1; }
+.contact-art { position: absolute; right: 3%; bottom: 36px; width: min(620px, 60%); opacity: .75; pointer-events: none; }
+.contact-art .pulse-ecg { stroke: rgba(200,211,226,.45); }
+.contact-art .pulse-bars rect { fill: rgba(212,167,44,.14); }
+.contact-art .pulse-dots circle { fill: #081a42; }
+
+@media (max-width: 600px) {
+  .hero::before { width: 100%; height: 50%; }
+  .hero-photo::before, .hero-photo::after, .hero-chip { display: none; }
+  .hero-pulse { margin-top: 36px; }
+  .contact-art { width: 90%; right: 5%; opacity: .3; }
+  .edu-logo { height: 48px; }
+}

@@ -551,6 +551,8 @@ window.SITE_CONTENT = {
       {
         "show": true,
         "school": "Johns Hopkins University",
+        "logo": "images/jhu-logo.svg",
+        "logoAlt": "Johns Hopkins University logo",
         "degree": "MPH, Bloomberg School of Public Health · MBA, Carey Business School",
         "meta": "Baltimore, MD · Expected May 2028",
         "bullets": [
@@ -561,6 +563,8 @@ window.SITE_CONTENT = {
       {
         "show": true,
         "school": "Jimma University Institute of Health",
+        "logo": "images/jimma-logo.png",
+        "logoAlt": "Jimma University logo",
         "degree": "Doctor of Medicine (MD), with Distinction",
         "meta": "Jimma, Ethiopia · Sep 2014 – Sep 2021",
         "bullets": [
@@ -570,6 +574,8 @@ window.SITE_CONTENT = {
       {
         "show": true,
         "school": "Campus leadership",
+        "logo": "",
+        "logoAlt": "",
         "degree": "",
         "meta": "",
         "bullets": [
