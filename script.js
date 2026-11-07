@@ -145,7 +145,7 @@
         <div class="samples-head">
           ${T("h3", P + ".title", sm.title || (EDIT ? "" : "Work samples: " + pr.title), "", "Work samples: " + pr.title + " (gallery title)")}
           ${T("p", P + ".note", sm.note, "muted", "Short note about these samples (optional)")}
-          ${EDIT ? `<p class="muted ed-hint">Text of the link on the card: <span data-edit="${P}.linkLabel" data-ph="See the slides ↓">${esc(sm.linkLabel)}</span></p>` : ""}
+          ${EDIT ? `<p class="muted ed-hint">Wording of the “see the slides” link on this project’s card (optional, only you see this note): <span data-edit="${P}.linkLabel" data-ph="See the work samples ↓">${esc(sm.linkLabel)}</span></p>` : ""}
         </div>
         ${items(sm.keyNumbers).length || EDIT ? `<div class="model-findings"${listAttr(P + ".keyNumbers", "+ Add key number")}>${items(sm.keyNumbers).map(({ it, i: j }) => `<div${entry(`${P}.keyNumbers.${j}`, it, "mf-stat")}>${T("strong", `${P}.keyNumbers.${j}.value`, it.value, "", "Number")}${T("span", `${P}.keyNumbers.${j}.label`, it.label, "", "What it means")}</div>`).join("")}</div>` : ""}
         ${items(sm.slides).length || EDIT ? `<div class="samples-grid${arr(sm.slides).length === 1 ? " samples-grid-one" : ""}"${listAttr(P + ".slides", "+ Add slide or image")}>${items(sm.slides).map(({ it, i: j }) => `
@@ -162,7 +162,8 @@
       <div class="container">
         ${head("projects", "menuLabel", s.menuLabel, s.title)}
         <div class="cards"${listAttr("projects.items", "+ Add project")}>${list.map(({ it, i }) => renderProjectCard(it, i)).join("")}</div>
-        ${list.filter(({ it }) => EDIT || hasSamples(it)).map(({ it, i }) => renderSamples(it, i)).join("")}
+        ${list.filter(({ it }) => hasSamples(it)).map(({ it, i }) => renderSamples(it, i)).join("")}
+        ${EDIT ? list.filter(({ it }) => !hasSamples(it)).map(({ it, i }) => `<div class="ed-samples-empty"${listAttr(`projects.items.${i}.samples.slides`, "+ Add work samples (slides or images) for " + (it.title || "this project"))}></div>`).join("") : ""}
       </div>
     </section>`;
   }
