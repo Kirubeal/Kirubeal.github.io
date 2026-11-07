@@ -447,3 +447,14 @@ body.editing section[data-section] { position: relative; }
 .ed-help li { margin-bottom: 8px; line-height: 1.45; }
 .ed-hint { font-size: 14px; color: #8a93a8; }
 @media print { .ed-fab, .ed-bar { display: none; } }
+
+/* ---------- Phones only: name and intro first, small round photo ---------- */
+@media (max-width: 600px) {
+  .hero { padding: 72px 0 48px; }
+  .hero-grid { gap: 18px; }
+  .hero-photo { max-width: 112px; order: -1; }
+  .hero-photo img { aspect-ratio: 1 / 1; border-radius: 50%; border: 3px solid #d4a72c; box-shadow: none; object-position: center 18%; }
+  .hero h1 { font-size: 2.1rem; line-height: 1.15; }
+  .hero .lede { font-size: 1.05rem; margin-top: 16px; }
+  .hero-actions { margin-top: 24px; }
+}

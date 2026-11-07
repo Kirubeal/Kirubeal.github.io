@@ -67,8 +67,8 @@ window.SITE_CONTENT = {
         "role": "Medical Partner & Lead, Market Access and Strategy",
         "subtitle": "AI-supported, mobile-first health platform for African health systems",
         "paragraphs": [
-          "In rural Ethiopian clinics I saw patient histories kept on paper, lab results arriving after patients had left, and visit data reaching decision makers weeks late. Avinah is designed to run on ordinary phones, work offline, and keep each patient's record linked from intake to results. Its patient app is in beta.",
-          "I'm the clinical lead and medical liaison to clinicians and health leaders, and I lead market access and strategy: which health systems to approach and how to prove value in a pilot. Avinah is a team effort; a Carey teammate leads the technology."
+          "Built for rural Ethiopian clinics, where patient records are on paper and lab results often arrive after the patient has left. Avinah is designed to run offline on ordinary phones; its patient app is in beta.",
+          "I’m the clinical lead and lead market access and strategy: which health systems to approach and how to prove value in a pilot. It’s a team effort; a Carey teammate leads the technology."
         ],
         "chips": [
           "Digital health",
@@ -105,9 +105,8 @@ window.SITE_CONTENT = {
         "role": "",
         "subtitle": "Baltimore medical device startup · Health Innovation and Evaluation",
         "paragraphs": [
-          "BlueHealer's implant aims to save the limbs of patients with chronic limb-threatening ischemia who would otherwise face amputation; the US performs about 150,000 non-traumatic lower-limb amputations a year.",
-          "I built a Monte Carlo model on a US Medicare basis (20,000 draws, six treatment pathways). Against amputation, the implant came out roughly cost-neutral, with a large quality-of-life gain: +0.83 QALYs and +$83,708 net monetary benefit per patient at $100,000 per QALY, positive in every draw.",
-          "I also wrote the competitor analysis and clinical description, and projected earnings at 6 months, 1 year and 5 years for the client pitch."
+          "BlueHealer’s implant aims to save the limbs of patients with chronic limb-threatening ischemia who would otherwise face amputation (about 150,000 non-traumatic lower-limb amputations a year in the US).",
+          "My Monte Carlo model (Medicare basis, 20,000 draws) found the implant roughly cost-neutral against amputation, with +0.83 QALYs and +,708 net monetary benefit per patient. I also wrote the competitor analysis and the 6-month to 5-year earnings projections for the pitch."
         ],
         "chips": [
           "Monte Carlo",
@@ -242,8 +241,8 @@ window.SITE_CONTENT = {
         "role": "",
         "subtitle": "Medical Affairs launch plan for an AML therapy · Team of four",
         "paragraphs": [
-          "The case drug was ten months from its FDA decision. How should Medical Affairs get 14 of 20 priority health systems and 18 of 20 payers on board within a year of launch? We recommended a tiered, payer-weighted launch: shift field effort toward payers, build credibility with key opinion leaders, and certify all 52 field staff early.",
-          "I built the Monte Carlo simulation (20,000 launches per plan), the hypothesis tree and the MECE issue structure behind the plan. The simulation showed the hospital goal was safe (98%) but payer coverage was the binding constraint (26%), which is why the plan weights payers."
+          "Ten months before the FDA decision, how should Medical Affairs win 14 of 20 priority health systems and 18 of 20 payers within a year of launch? We recommended a tiered, payer-weighted launch.",
+          "I built the Monte Carlo simulation (20,000 launches per plan), the hypothesis tree and the MECE issue structure. It showed the hospital goal was safe (98%) but payer coverage was the binding constraint (26%), which is why the plan weights payers."
         ],
         "chips": [
           "Market access",
