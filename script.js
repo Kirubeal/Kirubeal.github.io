@@ -8,7 +8,9 @@
     mail: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.2L4 7.3V17h16V7.3l-8 4.9ZM5.4 7l6.6 4 6.6-4H5.4Z"/></svg>'
   };
   const SECTIONS = ["about", "projects", "harme", "experience", "research", "education", "skills", "contact"];
-  const EDIT = new URLSearchParams(location.search).has("edit");
+  // Edit mode only works on your own computer, never on the published site.
+  const LOCAL = location.protocol === "file:" || /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  const EDIT = LOCAL && new URLSearchParams(location.search).has("edit");
   window.__EDIT_MODE = EDIT;
 
   /* ---------- helpers ---------- */
